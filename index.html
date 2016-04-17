@@ -1,0 +1,122 @@
+<!DOCTYPE HTML5>
+
+<html>
+    <head>
+        <title>UFO Sighting DB</title>
+        <link rel="shortcut icon" href="Images/balls.ico">
+        <link rel='stylesheet' href='stylesheet.css'/>
+        <script src = 'jquery-1.11.1.js'></script>
+        <script src = 'papaparse.js'></script>
+        <script src="Chart.js"></script>
+        <script src = 'main.js'></script>
+        
+    </head>
+    <body>
+        <center><a href="http://www.nuforc.org/webreports.html"><img src = 'Images/banner2.png' id = "banner"></a></center>
+        <br><br>
+        <div class="UIDiv"><p id="UIone"><strong>What did you see?</strong></p>
+        <br>
+            <div class="ui-field-contain">
+              <label for="select-choice-1" class="select">State:</label>
+                <select name="select-choice-1" id="select-choice-1">
+                  <option value="AL">AL</option>
+                  <option value="AK">AK</option>
+                  <option value="AZ">AZ</option>
+                  <option value="AR">AR</option>
+                  <option value="CA">CA</option>
+                  <option value="CO">CO</option>
+                  <option value="CT">CT</option>
+                  <option value="DE">DE</option>
+                  <option value="FL">FL</option>
+                  <option value="GA">GA</option>
+                  <option value="HI">HI</option>
+                  <option value="ID">ID</option>
+                  <option value="IL">IL</option>
+                  <option value="IN">IN</option>
+                  <option value="IA">IA</option>
+                  <option value="KS">KS</option>
+                  <option value="KY">KY</option>
+                  <option value="LA">LA</option>
+                  <option value="ME">ME</option>
+                  <option value="MD">MD</option>
+                  <option value="MA">MA</option>
+                  <option value="MI">MI</option>
+                  <option value="MN">MN</option>
+                  <option value="MS">MS</option>
+                  <option value="MO">MO</option>
+                  <option value="MT">MT</option>
+                  <option value="NE">NE</option>
+                  <option value="NV">NV</option>
+                  <option value="NH">NH</option>
+                  <option value="NJ">NJ</option>
+                  <option value="NM">NM</option>
+                  <option value="NY">NY</option>
+                  <option value="NC">NC</option>
+                  <option value="ND">ND</option>
+                  <option value="OH">OH</option>
+                  <option value="OK">OK</option>
+                  <option value="OR">OR</option>
+                  <option value="PA">PA</option>
+                  <option value="RI">RI</option>
+                  <option value="SC">SC</option>
+                  <option value="SD">SD</option>
+                  <option value="TN">TN</option>
+                  <option value="TX">TX</option>
+                  <option value="UT">UT</option>
+                  <option value="VT">VT</option>
+                  <option value="VA">VA</option>
+                  <option value="WA">WA</option>
+                  <option value="WV">WV</option>
+                  <option value="WI">WI</option>
+                  <option value="WY">WY</option>
+                </select>
+              <br>
+              <label for="select-choice-2" class="select">Choose a Shape:</label>
+                <select name="select-choice-2" id="select-choice-2">
+                  <option value="Changing">Changing</option>
+                  <option value="Cigar">Cigar</option>
+                  <option value="Circle">Circle</option>
+                  <option value="Chevron">Chevron</option>
+                  <option value="Cone">Cone</option>
+                  <option value="Cross">Cross</option>
+                  <option value="Cylinder">Cylinder</option>
+                  <option value="Diamond">Diamond</option>
+                  <option value="Disk">Disk</option>
+                  <option value="Egg">Egg</option>
+                  <option value="Fireball">Fireball</option>
+                  <option value="Flash">Flash</option>
+                  <option value="Formation">Formation</option>
+                  <option value="Light">Light</option>
+                  <option value="Other">Other</option>
+                  <option value="Oval">Oval</option>
+                  <option value="Rectangle">Rectangle</option>
+                  <option value="Sphere">Sphere</option>
+                  <option value="Teardrop">Teardrop</option>
+                  <option value="Triangle">Triangle</option>
+                  <option value="Unknown">Unknown</option>
+                </select>
+            </div>
+             <div class="btn" >Let's Find Out</div>
+        </div>
+       
+        <canvas id="mostStatePie" width="256" height="256"></canvas>
+        <div id="mostStateTitle" ><p><strong>States with the Most UFO Sightings</strong></p></div>
+        <canvas id="leastStatePie" width="256" height="256"></canvas>
+        <div id="leastStateTitle"><p><strong>States with the Least UFO Sightings</strong></p></div> 
+        <canvas id="mostShapePie" width="256" height="256"></canvas>
+        <div id="mostShapeTitle"><p><strong>Most Common Shapes</strong></p></div> 
+        <canvas id="leastShapePie" width="256" height="256"></canvas>
+        <div id="leastShapeTitle"><p><strong>Least Common Shapes</strong></p></div> 
+        <canvas id="barGraph" width="500" height="400"></canvas>
+        <div id="barTitle" class = 'label'><p><strong>Total Sightings by Day</strong></p></div> 
+        
+        
+    </body>
+    
+    <footer id="footer">
+      <p><br><br><br><br>Created by: Nima Eskandary, Nick Ponturo, Tanner Brooks, Satya Gandham</p>
+      <p>Daemon Dash 2015 ----<a href="http://www.nuforc.org/webreports.html" style="color:yellow;">
+      UFO Sighting Data</a>.</p>
+    </footer>
+    
+</html>

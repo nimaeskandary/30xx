@@ -1,0 +1,17 @@
+Title Screen: 600 x 600 background
+
+Think about the intro before level 1
+
+Level one: needs 600x600 background (note the bottom 240 pixels will be covered by tiles)
+
+Map tiles:
+    -could be universally themed so each level just changes the color scheme
+    -30 x 30 tiles, think about minecraft for example
+    -powerups and interactable items (have to be 30 x 30, you could make extra space transparent)
+
+Code: -***basically look at fble API and we have to remake every mothod in some way
+    -score system
+    -button mapping
+    -sprite movement (look at fble player movement)
+    -map arrays (bottom of fble) (need at least 10 randomized tile layouts similar to daubs adventure ones)
+    
